@@ -1,0 +1,159 @@
+
+/*quitar display flex cuando cambia a pantalla celulares...*/
+/* .padre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+*/
+body { 
+    background: url(fondo.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 70%;
+  }
+
+  #agregar{
+    font-family: Arial;
+	color: #FFFFFF;
+	border-radius: 1px;
+	border: 2px #0a0a0a solid;
+	background: linear-gradient(42deg, #4498dd 21%, #005a96 41%);
+	text-shadow: 1px 1px 1px #aec4ff;
+	box-shadow: 1px 1px 2px 0px #7cc0ff;
+	cursor: pointer;
+	align-items: center;
+    padding: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+        
+    }
+    #agregar:hover {
+        background: linear-gradient(42deg,#005a96 21%, #4498dd 41%);
+    }
+
+    #pedir {
+        font-family: Arial;
+        color: #FFFFFF;
+        font-size: 15px;
+        border-radius: 47px;
+        border: 2px #141414 solid;
+        background: linear-gradient(309deg, #63ee68 21%, #48cf46 81%);
+        text-shadow: 1px 2px 27px rgba(68, 120, 54, 0.41);
+        box-shadow: inset 1px 1px 4px -16px rgba(187, 218, 247, 0.57);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        padding: 0px;
+        width: 250px;
+        padding-left: 30px;
+        height: 60px;
+    }
+    #pedir:hover {
+        background: linear-gradient(309deg, #48cf46 21%, #63ee68 81%);
+       
+    }
+
+
+    #logo{
+        width:100; 
+        height:25;
+    }
+
+
+.container{
+    padding-bottom: 20%;
+}
+
+    .fa {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+   
+    .contenedor_items{
+        text-align: center;
+        align-items: center;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        flex-direction: column;
+        width: auto;
+    }
+   
+    .botones{
+      text-align: center;
+      align-items: center;
+      margin: 20px;
+      width: 100%;
+      
+    } 
+  
+    #contenedor{
+        padding-top: 20px;
+        padding-bottom: 3px;
+        padding-left:20px ;
+        padding-right: 20px;
+        border-radius:15px;
+        border:2px solid black ;
+        opacity: 94%;
+
+        
+    }
+ .btnEliminar{
+    font-family: Arial;
+	color: #FFFFFF;
+	border-radius: 1px;
+	border: 4px #f70606 solid;
+	background: linear-gradient(42deg, #ff7878 21%, #ed1a1a 41%);
+	text-shadow: 1px 1px 1px #f50e0e;
+	box-shadow: 1px 1px 2px 0px #fa0000;
+	cursor: pointer;
+	align-items: center;
+ }
+
+ .btnEliminar:hover {
+	background: linear-gradient(42deg, #ed1a1a 21%, #ff7878 41%);
+}
+
+
+
+
+
+
+
+
+
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeOutRight {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  }
+  @keyframes fadeOutRight {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+}
