@@ -15,34 +15,27 @@ body {
     -o-background-size: cover;
     background-size: cover;
     bottom: 70%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
   }
 
-  #agregar{
-    font-family: Arial;
-	color: #FFFFFF;
-	border-radius: 1px;
-	border: 2px #0a0a0a solid;
-	background: linear-gradient(42deg, #4498dd 21%, #005a96 41%);
-	text-shadow: 1px 1px 1px #aec4ff;
-	box-shadow: 1px 1px 2px 0px #7cc0ff;
-	cursor: pointer;
-	align-items: center;
-    padding: 3px;
-    padding-left: 25px;
-    padding-right: 25px;
-        
-    }
-    #agregar:hover {
-        background: linear-gradient(42deg,#005a96 21%, #4498dd 41%);
-    }
+
+
+
+
+
+
+
+
+
+
 
     #pedir {
         font-family: Arial;
-        color: #FFFFFF;
+        color: #000000;
         font-size: 15px;
         border-radius: 47px;
         border: 2px #141414 solid;
-        background: linear-gradient(309deg, #63ee68 21%, #48cf46 81%);
+        background: linear-gradient(309deg, #18f71f 21%, #0af10e 81%);
         text-shadow: 1px 2px 27px rgba(68, 120, 54, 0.41);
         box-shadow: inset 1px 1px 4px -16px rgba(187, 218, 247, 0.57);
         cursor: pointer;
@@ -51,10 +44,14 @@ body {
         padding: 0px;
         width: 250px;
         padding-left: 30px;
-        height: 60px;
+        height: 50px;
+        
     }
+
     #pedir:hover {
-        background: linear-gradient(309deg, #48cf46 21%, #63ee68 81%);
+        background: linear-gradient(309deg, #18f71f 21%, #0af10e 81%);
+        color: black;
+        transform: scale(1.05) 
        
     }
 
@@ -64,6 +61,9 @@ body {
         height:25;
     }
 
+    #botoneras{
+        width: 50%;
+    }
 
 .container{
     padding-bottom: 20%;
@@ -101,6 +101,9 @@ body {
         border-radius:15px;
         border:2px solid black ;
         opacity: 94%;
+        margin-bottom:30px;
+        margin-top: 30px;
+        
 
         
     }
@@ -121,6 +124,11 @@ body {
 }
 
 
+.datos{
+    width: 90%;
+    text-align: center;
+    align-content: center;
+}
 
 
 
@@ -128,8 +136,7 @@ body {
 
 
 
-
-.fadeOutRight {
+.fadeOutRight { /*cuando elimino un item, hace animacion*/
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
   -webkit-animation-duration: 1s;
@@ -156,4 +163,87 @@ body {
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1080px) {
+    #agregar{
+        font-family: Arial;
+        color: #ffefef;
+        font-size: 30px;
+        border-radius: 47px;
+        border: 2px #141414 solid;
+        background: linear-gradient(309deg, #1a7edb 21%, #065af7 81%);
+        text-shadow: 1px 2px 27px rgba(68, 120, 54, 0.41);
+        box-shadow: inset 1px 1px 4px -16px rgba(248, 197, 199, 0.57);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        width:50px;
+        padding: 15px;
+        height: 50px;
+        margin-bottom: 30px;
+        position: fixed;
+        bottom: 700px;
+        right: 5px;
+        top: 65px;
+            
+        }
+    
+        #agregar::after{
+            content: "+";
+        }
+    
+}
+
+
+
+
+
+@media (min-width: 1081px) {
+    #agregar{
+        font-family: Arial;
+        color: #ffefef;
+        font-size: 30px;
+        border-radius: 47px;
+        border: 2px #141414 solid;
+        background: linear-gradient(309deg, #1a7edb 21%, #065af7 81%);
+        text-shadow: 1px 2px 27px rgba(68, 120, 54, 0.41);
+        box-shadow: inset 1px 1px 4px -16px rgba(248, 197, 199, 0.57);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        width:50px;
+        padding: 15px;
+        height: 50px;
+        margin-bottom: 30px;
+        position: fixed;
+        bottom: 700px;
+        right:50px;
+        top: 110px;
+        }
+    
+        #agregar:hover::after {   
+            content: "+";
+        } 
+    
+       #agregar:hover{
+            width: auto;
+            font-size: 210%;
+            background: linear-gradient(42deg,#1a7edb 21%, #065af7 41%);
+            transform: scale(1.05) 
+            
+       }
+
+       #agregar::after{
+        content: "+";
+    }
+    
+    
 }

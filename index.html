@@ -17,7 +17,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="logo.bmp"  width="135" height="35"></a>
+            <a class="navbar-brand" href="#"><img src="logo.bmp" width="135" height="35"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,17 +45,29 @@
 
 
     <div class="container">
-        <div class="row-12 botones">
-            <button id="agregar"> AGREGAR OTRO PRODUCTO </button>
-        </div>
-        <form id="formulario">
-            <div class="row-12 bg-light" id="contenedor"></div>
-        </form>
-        <div class="row-12 botones">
-            <button id="pedir"> GENERAR PEDIDO <i class="fa fa-whatsapp fa-2x"></i></button>
-        </div>
+
+        <center>
+
+            <div class="row datos">
+                <div class="row-12 bg-light" id="contenedor"></div>
+            </div>
+
+            
+                <div class="row" id="botoneras">
+    
+                    <div class="col">
+                        <button id="agregar" class="agregar"> </button>
+                        <button id="pedir" class="pedir"> GENERAR PEDIDO <i class="fa fa-whatsapp fa-2x"></i></button>
+                      <!--   <a href="intent://send/5493704768485#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">fdsf</a>
+                        <a href="whatsapp://send?text=Hello friend!&phone=5493704768483" data-action="share/whatsapp/share">43444444</a> -->
+                    </div>
+                </div>
+       
+
+        </center>
 
     </div>
+
 </body>
 
 </html>
